@@ -1,0 +1,31 @@
+@import url('@/assets/css/utilities.css');
+@import url('@/assets/css/fonts.css');
+
+:root {
+    --card-bg-color: #2c2c2c;
+    --pad-16: 1.6rem;
+    --purple: #b066f3;
+    --gradient: linear-gradient(278deg, #b066f3, #c20dc5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: none;
+    border: none;
+}
+
+body {
+    background-color: #201f23;
+    overflow: hidden;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(61 61 61);
+}
+.pad16 {
+    padding: var(--pad-16);
+}

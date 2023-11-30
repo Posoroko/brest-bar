@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.purple-text {
+    color: #b066f3;
+}
+.gradient-text {
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
