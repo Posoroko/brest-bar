@@ -20,7 +20,7 @@ const activeBtn = ref("Cave");
                 :key="btn.id"
                 @click="activeBtn = btn.name"
                 >
-                <div class="centered">{{ btn.emoji }}</div>
+                <div class="button centered">{{ btn.emoji }}</div>
             
                 <p class="white-text centered" :class="{ 'active': activeBtn == btn.name }">{{ btn.name }}</p>
             </button>
@@ -41,24 +41,20 @@ h2 {
 button {
     width: 30%;
     background-color: transparent;
-
-    div {
-        width: 100%;
-        aspect-ratio: 1;
-        font-size: 3.6rem;
-        background-color: var(--card-bg-color);
-        border-radius: 10px;
-        border: none;
-    }
-
-    p {
-        font-size: 1.6rem;
-
-        &.active {
-            color: var(--purple);
-        }
-    }
-    
+}
+.button {
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3.6rem;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    border: none;
 }
 
+p {
+    font-size: 1.6rem;    
+}
+p.active {
+    color: var(--purple);
+}
 </style>

@@ -59,7 +59,13 @@ main {
 .leftBox {
     width: 33.333333%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;    
+}
+.leftBox::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+*::-webkit-scrollbar-track {
+  background: orange;
 }
 @media screen and (max-width: 1022px) {
     .leftBox {
